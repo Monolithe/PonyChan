@@ -89,6 +89,7 @@ public class Downloader {
             }
             catch (SecurityException se) {
                 System.err.println("Error : Can't write in this directory");
+                return;
             }
         }
 
