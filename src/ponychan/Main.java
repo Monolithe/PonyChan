@@ -1,5 +1,9 @@
 package ponychan;
 
+import ponychan.chan.ChanThreadMatchException;
+import ponychan.downloader.Downloader;
+import ponychan.ui.DownloaderUI;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -7,6 +11,7 @@ import java.util.Map;
 public class Main {
 
     public static void main(String[] args) {
+        /*
         if (args.length > 0) {
             for (int i = 0; i < args.length; i++) {
                 try {
@@ -28,5 +33,7 @@ public class Main {
         else {
             System.err.println("Specify the 4chan threads in command line arguments");
         }
+        */
+        DownloaderUI ui = new DownloaderUI();
     }
 }

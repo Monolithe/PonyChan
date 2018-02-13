@@ -1,4 +1,4 @@
-package ponychan;
+package ponychan.chan;
 
 import java.net.MalformedURLException;
 import java.net.URL;

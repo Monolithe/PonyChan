@@ -1,4 +1,4 @@
-package ponychan;
+package ponychan.downloader;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

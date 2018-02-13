@@ -1,4 +1,4 @@
-package ponychan;
+package ponychan.chan;
 
 public class ChanThreadMatchException extends Exception {
     public ChanThreadMatchException() {

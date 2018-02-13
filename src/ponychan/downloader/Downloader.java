@@ -1,16 +1,14 @@
-package ponychan;
+package ponychan.downloader;
 
 import java.io.*;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.nio.channels.Channels;
-import java.nio.channels.ReadableByteChannel;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.json.*;
+import ponychan.chan.ChanThread;
+import ponychan.chan.ChanThreadMatchException;
 
 public class Downloader {
     private static Downloader INSTANCE = new Downloader();
@@ -88,8 +86,7 @@ public class Downloader {
                 directory.mkdir();
             }
             catch (SecurityException se) {
-                System.err.println("Error : Can't write in this directory");
-                return;
+                throw se;
             }
         }
 
